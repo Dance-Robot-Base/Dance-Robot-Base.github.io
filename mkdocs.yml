@@ -1,0 +1,159 @@
+site_name: 西北工业大学舞蹈机器人基地
+site_url: https://RayC0323.github.io/dance-robot/ # 网站地址
+
+repo_name: RayC0323/dance-robot # 仓库名称
+repo_url: https://github.com/RayC0323/dance-robot/ # 仓库地址
+edit_uri: edit/main/docs/
+
+theme:
+    name: "material" # 主题名称
+    language: "zh" # 网站语言
+    favicon: image/ico.png # 网站图标
+    icon: # 网站图标
+        logo: material/robot-outline
+
+    features: # 特性
+        - content.code.annotate # 代码注释
+        - navigation.tracking # 导航栏跟踪
+        - navigation.tabs # 导航栏标签
+        - navigation.indexes # 导航栏索引
+        - navigation.top # 导航栏顶部
+        - content.code.copy # 代码复制
+        - content.code.annotate # 代码注释
+        - navigation.footer # 导航栏底部
+        - navigation.sections
+        - navigation.expand #目录展开
+        - navigation.path
+        - toc.follow
+        - content.tooltips
+        - content.action.edit
+        - content.action.view
+
+    palette:
+        scheme: auto
+
+    custom_dir: docs/resources
+
+extra_css:
+    - theme/css/import.css
+
+extra_javascript:
+    - resources/javascript/mathjax.js
+    - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+    - heti
+    - mkdocs-video:
+          is_video: False
+          video_muted: False
+          video_controls: True
+          css_style:
+              width: "100%"
+              height: "22.172vw"
+    - glightbox:
+          touchNavigation: true
+          loop: false
+          effect: zoom
+          slide_effect: slide
+          width: 100%
+          height: auto
+          zoomable: true
+          draggable: true
+          skip_classes:
+              - skip-lightbox
+          auto_caption: false
+          caption_position: bottom
+          background: white
+          shadow: true
+          manual: false
+    - search
+
+    - git-revision-date-localized:
+          type: timeago
+          timezone: Asia/Shanghai
+          locale: zh
+          enable_creation_date: true
+    - git-committers:
+          repository: RayC0323/dance-robot
+          branch: main
+          exclude_committers:
+              - "web-flow"
+
+markdown_extensions:
+    - abbr # 缩写
+    - pymdownx.snippets # 代码块
+    - pymdownx.highlight: # 代码高亮
+          anchor_linenums: true # 代码行号
+    - pymdownx.inlinehilite # 行内代码高亮
+    - pymdownx.superfences # 内置标题栏
+    - attr_list # 属性列表
+    - md_in_html
+    - attr_list
+    - footnotes # 脚注
+
+    - toc: # 目录
+          permalink: "⤴" # 目录链接
+          toc_depth: 4 # 目录深度
+    - meta # 元数据
+    - def_list # 定义列表
+    - attr_list # 属性列表
+    - md_in_html # HTML中的Markdown
+    - sane_lists # 列表
+    - admonition # 警告
+
+    - pymdownx.keys # 键盘
+    - pymdownx.mark # 标记
+      # 格式化处理
+    - pymdownx.caret # 上标
+    - pymdownx.keys # 键盘
+    - pymdownx.mark # 标记
+    - pymdownx.tilde # 删除线
+    - pymdownx.critic # 评论
+
+    - pymdownx.details # 详情
+    - pymdownx.magiclink # 链接
+    - tables # 表格
+
+    - meta
+
+    - pymdownx.tabbed: # 标签
+          alternate_style: true # 标签样式
+    - pymdownx.tasklist: # 任务列表
+          custom_checkbox: true # 自定义复选框
+    - pymdownx.arithmatex: # 数学公式
+          generic: true # 通用
+    - pymdownx.emoji: # emoji
+          emoji_index:
+              !!python/name:material.extensions.emoji.twemoji # emoji索引
+
+
+          emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+    - index.md
+    - 项目组: page/项目组/index.md
+    - 技术方向:
+          - page/方向/index.md
+          - 软件组: page/方向/软件.md
+          - 电子组: page/方向/电子.md
+          - 机械组: page/方向/机械.md
+    - 学习思路:
+          - page/学习思路/index.md
+          - 软件学习: page/学习思路/软件组学习思路.md
+          - 电子学习: page/学习思路/电子组学习思路.md
+          - 机械学习: page/学习思路/机械组学习思路.md
+    - 机器人档案:
+          - page/比赛/index.md
+          - 舞蹈组: page/比赛/舞蹈组.md
+          - 救援组: page/比赛/救援组.md
+          - 家政组: page/比赛/家政组.md
+          - 篮球组: page/比赛/篮球组.md
+
+    - 技术文档:
+          - page/文档/index.md
+          - 家政组:
+                - 视觉文档: https://npu-home.github.io/vision-docs-site/
+                - 机械臂文档: https://npu-home.github.io/arm/
+
+    - 招新信息:
+          - page/招新/index.md
