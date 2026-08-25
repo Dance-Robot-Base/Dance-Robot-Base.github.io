@@ -1,3 +1,6 @@
 /site
 /.history
 /.cache
+/.tmp
+/.venv
+/.venv-mkdocs

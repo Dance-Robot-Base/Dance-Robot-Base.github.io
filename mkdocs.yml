@@ -73,11 +73,7 @@ plugins:
           timezone: Asia/Shanghai
           locale: zh
           enable_creation_date: true
-    - git-committers:
-          repository: RayC0323/dance-robot
-          branch: main
-          exclude_committers:
-              - "web-flow"
+          enable_parallel_processing: False
 
 markdown_extensions:
     - abbr # 缩写
