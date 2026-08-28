@@ -1,8 +1,8 @@
 site_name: 西北工业大学舞蹈机器人基地
-site_url: https://RayC0323.github.io/dance-robot/ # 网站地址
+site_url: https://dance-robot-base.github.io/ # 网站地址
 
-repo_name: RayC0323/dance-robot # 仓库名称
-repo_url: https://github.com/RayC0323/dance-robot/ # 仓库地址
+repo_name: Dance-Robot-Base/Dance-Robot-Base.github.io # 仓库名称
+repo_url: https://github.com/Dance-Robot-Base/Dance-Robot-Base.github.io/ # 仓库地址
 edit_uri: edit/main/docs/
 
 theme:
